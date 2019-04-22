@@ -4,8 +4,8 @@ import os
 def getFile(directory, n): #returns file in a directory based on n
     #directory must be a raw string.
     os.chdir(directory)
+    #print("    directory: " + os.getcwd())
     dirList = os.listdir(directory) #stores all of the files in the directory into a list
-
     i = 0
     for file in dirList:
         if i == n:
